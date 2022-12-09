@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatGridListModule
+    MatGridListModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
