@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Demo1';
+
+  constructor(private mySnackBar:MatSnackBar){}
+
+  openSnackBar(x:string,y:string){
+    this.mySnackBar.open(x,y, {duration: 2000});
+  }
+
 }
